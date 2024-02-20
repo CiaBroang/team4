@@ -1,7 +1,5 @@
 <template>
-  <div style="width: 750px">
-    <Qalendar :events="events" :config="config" />
-  </div>
+  <Qalendar :events="events" :config="config" />
 </template>
 
 <script>
@@ -72,6 +70,3 @@ export default {
 <style>
 @import 'qalendar/dist/style.css';
 </style>
-
-
-
