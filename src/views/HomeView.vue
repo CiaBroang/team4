@@ -1,9 +1,3 @@
-<script setup>
-import CalendarBox from '../components/CalendarBox.vue'
-</script>
+<script setup></script>
 
-<template>
-  <main>
-    <CalendarBox />
-  </main>
-</template>
+<template><p>Hej</p></template>

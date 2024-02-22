@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div id="calendar-container">
     <bryntum-calendar-project-model
       ref="project"
       v-bind="projectConfig"
@@ -88,5 +88,5 @@ export default {
 </script>
 
 <style lang="scss">
-@import 'src/App.scss';
+@import '../App.scss';
 </style>
