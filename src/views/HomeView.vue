@@ -1,9 +1,14 @@
 <script setup>
-import CalendarBox from '../components/CalendarBox.vue'
+import HeroImage from "../components/HeroImage.vue";
 </script>
 
 <template>
   <main>
-    <CalendarBox />
+    <!-- div för navbar -->  
+    <HeroImage />
+    <!-- div för inloggningsknapp -->
+    <!-- div för registreringsknapp -->
+    <!-- div för beskrivning av "produkten" -->
+    <!-- div för footer -->    
   </main>
 </template>
