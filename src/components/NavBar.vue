@@ -1,12 +1,8 @@
-<script setup>
-import { RouterView } from 'vue-router'
-</script>
-
 <template>
   <v-app>
     <v-app-bar app color="white">
       <v-toolbar-title>
-        <img class="mr-10" src="./assets/img/pocket-planner-favicon-color.png" alt="Logotyp" height="60">
+        <img class="mr-10" src="../assets/img/pocket-planner-favicon-color.png" alt="Logotyp" height="60">
       </v-toolbar-title>
       <v-spacer></v-spacer>
       <v-chip class="mr-10 chip-custom" size="x-large" color="orange" text>Log in</v-chip>
@@ -23,10 +19,7 @@ import { RouterView } from 'vue-router'
         </v-list>
       </v-menu>
     </v-app-bar>
-
-    <div style="margin-top: 6em;">
     <router-view></router-view>
-  </div>
   </v-app>
 </template>
 
