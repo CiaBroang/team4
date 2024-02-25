@@ -1,14 +1,4 @@
-<script>
-  export default {
-    data: () => ({
-      links: [
-        'About Us',
-        'Contact',
-        'Jobs'
-      ],
-    }),
-  }
-</script>
+
 
 <template>
   <v-footer class="bg-grey-lighten-1">
@@ -30,8 +20,20 @@
   </v-footer>
 </template>
 
-<!-- <style scoped>
-.g-grey-lighten-1{
-  background-color: rgb(255, 156, 7);
+<script>
+  export default {
+    data: () => ({
+      links: [
+        'About Us',
+        'Contact',
+        'Jobs'
+      ],
+    }),
+  }
+</script>
+
+<style scoped>
+.bg-grey-lighten-1r{
+  background-color:#FF851B ;
 }
-</style> -->
+</style>
