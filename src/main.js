@@ -27,7 +27,7 @@ const vuetify = createVuetify({
 
 export default createVuetify({
   theme: {
-    defaultTheme: 'light'
+    defaultTheme: 'dark'
   }
 })
 

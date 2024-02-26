@@ -1,6 +1,7 @@
 
 
 <template>
+  <v-layout>
   <v-footer class="custom-footer">
     <v-row justify="center" no-gutters>
       <v-col cols="12" class="d-flex justify-center">
@@ -20,6 +21,7 @@
       </v-col>
     </v-row>
   </v-footer>
+</v-layout>
 </template>
 
 <script>
@@ -34,9 +36,9 @@ export default {
 }
 </script>
 
-<style scoped>
+<style>
 .custom-footer {
-  background-color: #FF851B;
+  background-color: #FF851B !important ;
   position: absolute;
   bottom: 0;
   height: 75px !important ;

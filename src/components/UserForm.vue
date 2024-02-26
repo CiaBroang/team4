@@ -3,6 +3,9 @@
       class="mx-auto"
       max-width="344"
       title="User Registration"
+      subtitle="Sign up — don’t miss out on bonus features.
+
+"
     >
       <v-container>
         <v-text-field
@@ -36,8 +39,8 @@
   
         <v-checkbox
           v-model="terms"
-          color="secondary"
-          label="I agree to pocket planners terms & conditions"
+          color="black"
+          label="I agree to Pocket Planner terms & conditions"
         ></v-checkbox>
       </v-container>
   
@@ -50,11 +53,12 @@
           Create your account
   
           <v-icon icon="mdi-chevron-right" end></v-icon>
+
+          
         </v-btn>
       </v-card-actions>
     </v-card>
   </template>
-
 
 <script>
   export default {
@@ -67,3 +71,8 @@
     }),
   }
 </script>
+
+<style>
+
+
+</style>
