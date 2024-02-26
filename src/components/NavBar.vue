@@ -5,7 +5,7 @@
         <img class="mr-10" src="../assets/img/pocket-planner-favicon-color.png" alt="Logotyp" height="60">
       </v-toolbar-title>
       <v-spacer></v-spacer>
-      <v-chip class="mr-10 chip-custom" size="x-large" color="orange" text>Log in</v-chip>
+      <v-chip class="mr-10 chip-custom" size="x-large" color="orange" text>Sign in</v-chip>
       <v-menu>
         <template v-slot:activator="{ props }">
           <v-btn style="color: orange;" icon="$vuetify" v-bind="props">
@@ -19,7 +19,6 @@
         </v-list>
       </v-menu>
     </v-app-bar>
-    <router-view></router-view>
   </v-app>
 </template>
 
@@ -38,6 +37,12 @@ data: () => ({
 </script>
 
 <style>
+
+.v-application__wrap {
+  min-height: auto !important;
+  margin: 5vh;
+}
+
 .chip-custom {
   padding: 8px 30px;
 }
@@ -51,6 +56,6 @@ data: () => ({
 }
 
 .custom-dark-theme {
-  color: #fff; /* Byt ut färgen till den mörka färgen du vill ha */
+  color: black; /* Byt ut färgen till den mörka färgen du vill ha */
 }
 </style>

@@ -1,6 +1,5 @@
 <script setup>
 import HeroImage from "../components/HeroImage.vue";
-import FooterComponent from "../components/FooterComponent.vue"
 </script>
 
 <template>
@@ -32,9 +31,6 @@ import FooterComponent from "../components/FooterComponent.vue"
           laborum." </v-card-text>
       </v-card>
     </v-container>
-
-    <!-- div för footer -->
-        <FooterComponent />
   </main>
 </template>
 

@@ -1,7 +1,7 @@
 // Bryntum component styling. Required for application
 @import "@bryntum/calendar/calendar.stockholm.css";
 // Demo styling is used for Bryntum example only. Not required for application
-@import '../demo-resources/scss/example-vite.scss';
+// @import '../demo-resources/scss/example-vite.scss';
 
 .b-grid-cell[data-column="name"] i {
     margin-inline-end : 0.5em;
