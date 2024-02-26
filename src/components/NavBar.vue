@@ -27,10 +27,9 @@
 export default {
 data: () => ({
   items: [
-    { title: 'Click Me' },
-    { title: 'Click Me' },
-    { title: 'Click Me' },
-    { title: 'Click Me' },
+    { title: 'My account' },
+    { title: 'About Pocket planner' },
+    { title: 'For your business' },
   ],
 }),
 }
@@ -49,13 +48,5 @@ data: () => ({
 
 .chip-custom:hover {
   background-color: #e0e0e0;
-}
-
-.icon {
-  color: black;
-}
-
-.custom-dark-theme {
-  color: black; /* Byt ut färgen till den mörka färgen du vill ha */
 }
 </style>
