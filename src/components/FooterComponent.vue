@@ -38,7 +38,7 @@ export default {
 
 <style>
 .custom-footer {
-  background-color: #FF851B !important ;
+  background-color: #ff851b !important ;
   position: absolute;
   bottom: 0;
   height: 75px !important ;

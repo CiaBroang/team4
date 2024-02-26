@@ -8,12 +8,22 @@ import HeroImage from "../components/HeroImage.vue";
     <HeroImage />
 
     <!-- div för inloggningsknapp -->
-    <div class="text-center">
-      <v-btn class="logBtn" elevation="2" large>Log in</v-btn>
-    </div>
+   <!--  <div class="text-center">
+      <router-link to="/LoginView"><v-btn class="logBtn" elevation="2" large >Log in</v-btn></router-link>
+    </div> -->
+
+
+
+<div class="text-center">
+  <router-link to="/LoginView">
+    <v-btn class="logBtn custom-button" elevation="2" large>Log in</v-btn>
+  </router-link>
+</div>
+
+
     <!-- div för registreringsknapp -->
     <div class="text-center">
-      <v-btn class="logBtn" elevation="2" large>Register</v-btn>
+      <router-link to="/SignupView"><v-btn class="logBtn" elevation="2" large>Register</v-btn></router-link>
     </div>
 
     <!-- div för beskrivning av "produkten" -->
@@ -24,17 +34,18 @@ import HeroImage from "../components/HeroImage.vue";
           <v-card-title>About Pocket Planner</v-card-title>
         </v-card-item>
 
-        <v-card-text> "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-          et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-          commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
-          laborum." </v-card-text>
+        <v-card-text> "Introducing Pocket Planner, your sleek and intuitive digital calendar for effortless scheduling on the go. With features like customizable reminders, color-coded categories, managing your schedule has never been easier. Stay organized, stay on top of your commitments — download Pocket Planner today!" </v-card-text>
       </v-card>
     </v-container>
   </main>
 </template>
 
 <style scoped>
+
+  .custom-button {
+    background-color: #FF851B;
+  }
+
 .text-center {
   margin: 50px;
   display: block;
@@ -72,6 +83,3 @@ button {
   }
 }
 </style>
-
-
-
