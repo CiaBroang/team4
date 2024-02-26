@@ -1,5 +1,6 @@
 <script setup>
 import HeroImage from "../components/HeroImage.vue";
+import FooterComponent from "../components/FooterComponent.vue"
 </script>
 
 <template>
@@ -33,12 +34,11 @@ import HeroImage from "../components/HeroImage.vue";
     </v-container>
 
     <!-- div för footer -->
+        <FooterComponent />
   </main>
 </template>
 
 <style scoped>
-
-
 .text-center {
   margin: 50px;
   display: block;
@@ -76,3 +76,6 @@ button {
   }
 }
 </style>
+
+
+
