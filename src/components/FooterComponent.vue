@@ -37,7 +37,9 @@ export default {
 <style scoped>
 .custom-footer {
   background-color: #FF851B;
-  height: 75px !important;
+  position: absolute;
+  bottom: 0;
+  height: 75px !important ;
 }
 
 </style>
