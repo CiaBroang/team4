@@ -3,7 +3,7 @@
         <!-- add link -->
         <container class="signup">
 
-            <a href="#" class="underline-link" @click="login">
+            <a @click="$router.push('/signup')" class="underline-link" style="cursor: pointer;">
                 Or sign up here!
             </a>
         </container>
@@ -69,5 +69,4 @@ export default {
 .border-opacity-25 {
     margin: 1em;
 }
-
 </style>

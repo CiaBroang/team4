@@ -1,9 +1,8 @@
 <template>
   <v-card class="mx-auto" max-width="344" title="Create account" subtitle="Sign up — don’t miss out on bonus features.">
-    <!-- add link -->
     <span class="or-login">
-        <a href="#" class="underline-link" @click="login">Already a user? Log in here!</a>
-      </span>
+      <a class="underline-link" @click="$router.push('/login')" style="cursor: pointer;">Already a user? Log in here!</a>
+    </span>
     <v-container>
       <v-text-field v-model="first" color="primary" label="First name" variant="underlined"></v-text-field>
 
@@ -59,7 +58,6 @@ export default {
 }
 
 .or-login {
-  margin-left: 1em; 
+  margin-left: 1em;
 }
-
 </style>
