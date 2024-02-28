@@ -9,27 +9,12 @@ import router from './router'
 // Vuetify
 import 'vuetify/styles'
 import { createVuetify } from 'vuetify'
-import "@mdi/font/css/materialdesignicons.css"
 import * as components from 'vuetify/components'
 import * as directives from 'vuetify/directives'
-// import { mdi } from '@fontmdi/font';
-import { mdi } from 'vuetify/iconsets/mdi';
 
 const vuetify = createVuetify({
   components,
-  directives,
-  icons: {
-    defaultSet: 'mdi',
-    sets: {
-      mdi,
-    },
-  },
-})
-
-export default createVuetify({
-  theme: {
-    defaultTheme: 'dark'
-  }
+  directives
 })
 
 const app = createApp(App).use(vuetify)
