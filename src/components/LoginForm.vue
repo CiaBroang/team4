@@ -1,6 +1,5 @@
 <template>
     <v-card class="mx-auto px-6 py-8" max-width="344" title="Log in" subtitle="Log in to see your pocket planner.">
-        <!-- add link -->
         <container class="signup">
 
             <a @click="$router.push('/signup')" class="underline-link" style="cursor: pointer;">
@@ -9,11 +8,11 @@
         </container>
         <v-divider class="border-opacity-25" color="white"></v-divider>
         <v-form v-model="form" @submit.prevent="onSubmit">
-            <v-text-field v-model="email" :readonly="loading" :rules="[required]" class="mb-2" clearable
-                label="Email"></v-text-field>
+            <v-text-field v-model="email" :readonly="loading" :rules="[required]" class="mb-2" clearable label="Email"
+                variant="underlined"></v-text-field>
 
             <v-text-field v-model="password" :readonly="loading" :rules="[required]" clearable label="Password"
-                placeholder="Enter your password"></v-text-field>
+                placeholder="Enter your password" variant="underlined"></v-text-field>
 
             <br>
 
