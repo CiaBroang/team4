@@ -3,18 +3,20 @@
     <span class="or-login">
       <a class="underline-link" @click="$router.push('/login')" style="cursor: pointer;">Already a user? Log in here!</a>
     </span>
-    <v-container>
-      <v-text-field v-model="first" color="primary" label="First name" variant="underlined" :rules="[required]"></v-text-field>
+    <v-form ref="form">
+      <v-text-field v-model="first" color="primary" label="First name" variant="underlined"
+        :rules="[required]"></v-text-field>
 
-      <v-text-field v-model="last" color="primary" label="Last name" variant="underlined" :rules="[required]"></v-text-field>
+      <v-text-field v-model="last" color="primary" label="Last name" variant="underlined"
+        :rules="[required]"></v-text-field>
 
       <v-text-field v-model="email" color="primary" label="Email" variant="underlined" :rules="[required]"></v-text-field>
 
       <v-text-field v-model="password" color="primary" label="Password" placeholder="Enter your password"
         variant="underlined" :rules="[required]"></v-text-field>
 
-      <v-checkbox v-model="terms" color="black" label="I agree to Pocket Planner terms & conditions" :rules="[required]"></v-checkbox>
-    </v-container>
+      <v-checkbox v-model="terms" label="I agree to Pocket Planner terms & conditions"
+        :rules="[v => !!v || 'You must agree to continue!']" required></v-checkbox>
 
     <v-divider></v-divider>
 
@@ -22,11 +24,12 @@
       <v-spacer></v-spacer>
 
 
-      <v-btn color="success">
+      <v-btn color="success" @click="validate">
         Create your account
         <v-icon icon="mdi-chevron-right" end></v-icon>
       </v-btn>
     </v-card-actions>
+    </v-form>
   </v-card>
 </template>
 
@@ -42,19 +45,28 @@ export default {
   methods: {
 
     required(v) {
-            return !!v || 'Field is required'
-        },
-        
-    login() {
-      
+      return !!v || 'Field is required'
+    },
+    async validate() {
+      const { valid } = await this.$refs.form.validate();
+
+      if (valid) {
+        alert('We created your Pocket Planer!');
+        this.$router.push('/calendar');
+      }
     }
   }
 };
 </script>
 
 <style>
+
 .v-card {
-  margin: 3em;
+  margin: 2em;
+}
+
+.v-form {
+  margin: 2em;
 }
 
 .underline-link {
@@ -64,5 +76,4 @@ export default {
 
 .or-login {
   margin-left: 1em;
-}
-</style>
+}</style>
