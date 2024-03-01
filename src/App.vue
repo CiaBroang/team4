@@ -10,16 +10,3 @@ import FooterComponent from './components/FooterComponent.vue'
   <FooterComponent />
 </template>
 
-<script>
-
-export default {
-data: () => ({
-  items: [
-    { title: 'Click Me' },
-    { title: 'Click Me' },
-    { title: 'Click Me' },
-    { title: 'Click Me' },
-  ],
-}),
-}
-</script>
