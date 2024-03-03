@@ -8,8 +8,10 @@
         <div class="top-left">Planning life should be easy...</div>
         <div class="top-left2">So you have time to live your life</div>
     </div>
+
+
 </template>
-  
+
 <style>
 #logo-large {
     margin-top: 40px;
