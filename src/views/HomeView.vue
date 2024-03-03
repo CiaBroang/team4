@@ -1,5 +1,6 @@
 <script setup>
 import HeroImage from "../components/HeroImage.vue";
+/* import MockupPic from "../components/MockupPic.vue" */
 </script>
 
 <template>
@@ -7,23 +8,22 @@ import HeroImage from "../components/HeroImage.vue";
     <!-- div för navbar -->
     <HeroImage />
 
+    <div id="Mockup">
+        <img src="../assets/img/iPhone-pink-backgronund.jpg" alt="Iphone mockup"/>
+
+    <div class="content-container">
+
     <!-- div för inloggningsknapp -->
-   <!--  <div class="text-center">
-      <router-link to="/LoginView"><v-btn class="logBtn" elevation="2" large >Log in</v-btn></router-link>
-    </div> -->
-
-
-
-<div class="text-center">
-  <router-link to="/LoginView">
-    <v-btn class="logBtn custom-button" elevation="2" large>Log in</v-btn>
-  </router-link>
-</div>
+    <div class="text-center">
+      <router-link to="/Login">
+         <v-btn class="logBtn custom-button" elevation="2" large>Log in</v-btn>
+      </router-link>
+    </div>
 
 
     <!-- div för registreringsknapp -->
     <div class="text-center">
-      <router-link to="/SignupView"><v-btn class="logBtn" elevation="2" large>Register</v-btn></router-link>
+      <router-link to="/Signup"><v-btn class="logBtn" elevation="2" large>Register</v-btn></router-link>
     </div>
 
     <!-- div för beskrivning av "produkten" -->
@@ -37,27 +37,53 @@ import HeroImage from "../components/HeroImage.vue";
         <v-card-text> "Introducing Pocket Planner, your sleek and intuitive digital calendar for effortless scheduling on the go. With features like customizable reminders, color-coded categories, managing your schedule has never been easier. Stay organized, stay on top of your commitments — download Pocket Planner today!" </v-card-text>
       </v-card>
     </v-container>
+  </div>
+  </div>
+    <!-- <MockupPic /> -->
   </main>
 </template>
 
 <style scoped>
 
+#Mockup{
+  background-color: #F7E4D5;
+
+
+}
+
+#Mockup img {
+  margin-right: 60%;
+  height: auto;
+  width: 40%;
+  overflow-x: hidden;
+  background-color: #F7E4D5;
+
+}
+
   .custom-button {
     background-color: #FF851B;
+
   }
 
 .text-center {
-  margin: 50px;
-  display: block;
+  margin: 30px;
+  margin-left: 40%;
+  /* display: block; */
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
 }
 
 button {
   width: 15vw;
   align-items: center;
+
 }
 
 #about {
-  margin-bottom: 5vh;
+  margin-bottom: 0;
+  margin-left: 29%;
+
 }
 
 @media (max-width: 750px) {
