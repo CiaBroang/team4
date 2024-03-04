@@ -2,7 +2,9 @@
   <v-app>
     <v-app-bar app color="white">
       <v-toolbar-title>
-        <img class="mr-10" src="../assets/img/pocket-planner-favicon-color.png" alt="Logotyp" height="60">
+        <router-link to="/">
+          <img class="mr-10" src="../assets/img/pocket-planner-favicon-color.png" alt="Logotyp" height="60">
+        </router-link>
       </v-toolbar-title>
       <v-spacer></v-spacer>
       <v-chip @click="$router.push('/login')" class="mr-10 chip-custom" size="x-large" color="orange" text>Sign
@@ -37,6 +39,16 @@ export default {
 </script>
 
 <style>
+
+.toolbar-link {
+  display: flex;
+  align-items: center;
+}
+
+.title-text {
+  color: black;
+}
+
 .v-application__wrap {
   min-height: auto !important;
   margin: 5vh;

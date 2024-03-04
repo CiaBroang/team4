@@ -1,4 +1,5 @@
 <template>
+      <div id="app">
   <v-card class="mx-auto" max-width="344" title="Create account" subtitle="Sign up — don’t miss out on bonus features.">
     <span class="or-login">
       <a class="underline-link" @click="$router.push('/login')" style="cursor: pointer;">Already a user? Log in here!</a>
@@ -31,6 +32,7 @@
     </v-card-actions>
     </v-form>
   </v-card>
+</div>
 </template>
 
 <script>
@@ -60,6 +62,12 @@ export default {
 </script>
 
 <style>
+
+#app {
+    display: flex;
+    flex-direction: column;
+    min-height: 85vh;
+}
 
 .v-card {
   margin: 2em;
