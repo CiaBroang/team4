@@ -42,13 +42,13 @@ export default {
     resources.value = [
       {
         id: 1,
-        name: 'Möten',
-        eventColor: 'green'
+        name: 'Dagliga aktiviteter',
+        eventColor: '#ADDC97'
       },
       {
         id: 2,
-        name: 'Test',
-        eventColor: 'blue'
+        name: 'Viktigt',
+        eventColor: '#F9B98B'
       },
       {
         id: 3,
@@ -64,6 +64,16 @@ export default {
         id: 5,
         name: 'Helgdagsafton',
         eventColor: 'pink'
+      },
+      {
+        id: 6,
+        name: 'Paus',
+        eventColor: '#8BD1F9'
+      },
+      {
+        id: 8,
+        name: 'Övrigt',
+        eventColor: '#F9E78B'
       }
     ]
     events.value = [
