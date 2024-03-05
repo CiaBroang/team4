@@ -20,7 +20,7 @@ import HeroImage from "../components/HeroImage.vue";
         <!-- div för inloggningsknapp -->
         <div class="text-center">
           <router-link to="/Login">
-            <v-btn class="logBtn custom-button" elevation="2" large>Log in</v-btn>
+            <v-btn class="logBtn custom-button" elevation="2" large>Sign in</v-btn>
           </router-link>
           <!-- div för registreringsknapp -->
           <router-link to="/Signup"><v-btn class="logBtn" elevation="2" large>Register</v-btn></router-link>
@@ -30,7 +30,7 @@ import HeroImage from "../components/HeroImage.vue";
         <v-container id="about" align="center">
           <v-card width="450" align="center" justify="center" variant="elevated">
             <v-card-item>
-              <v-card-title>About Pocket Planner</v-card-title>
+              <v-card-title class="Title">About Pocket Planner</v-card-title>
             </v-card-item>
 
             <v-card-text class="text-h6"> "Introducing Pocket Planner, your sleek and intuitive digital calendar for
@@ -72,9 +72,22 @@ import HeroImage from "../components/HeroImage.vue";
   justify-content: center;
 }
 
-.custom-button {
-  background-color: #FF851B;
+.logBtn{
+  border-radius: 20px;
 
+
+
+}
+
+.custom-button {
+  background-color: #ff851b;/* #fff2e0; */
+  color: #ffffff;
+  border-radius: 20px;
+
+}
+
+.Title{
+  font-weight: 600 !important;
 }
 
 .text-center {
@@ -88,7 +101,6 @@ button {
   width: 15vw;
   align-items: center;
   margin: 10px;
-
 }
 
 #about {
