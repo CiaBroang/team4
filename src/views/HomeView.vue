@@ -5,84 +5,112 @@ import HeroImage from "../components/HeroImage.vue";
 
 <template>
   <main>
-    <!-- div för navbar -->
     <HeroImage />
 
-    <div id="Mockup">
-        <img src="../assets/img/iPhone-pink-backgronund.jpg" alt="Iphone mockup"/>
-
+    <!-- div wrapper för main content på startsidan -->
     <div class="content-container">
 
-    <!-- div för inloggningsknapp -->
-    <div class="text-center">
-      <router-link to="/Login">
-         <v-btn class="logBtn custom-button" elevation="2" large>Log in</v-btn>
-      </router-link>
+      <!-- <MockupPic /> -->
+      <div id="Mockup" class="leftFlex">
+        <img src="../assets/img/iPhone-pink-backgronund.jpg" alt="Iphone mockup" />
+      </div>
+
+      <div class="rightFlex">
+
+        <!-- div för inloggningsknapp -->
+        <div class="text-center">
+          <router-link to="/Login">
+            <v-btn class="logBtn custom-button" elevation="2" large>Log in</v-btn>
+          </router-link>
+          <!-- div för registreringsknapp -->
+          <router-link to="/Signup"><v-btn class="logBtn" elevation="2" large>Register</v-btn></router-link>
+        </div>
+
+        <!-- div för beskrivning av "produkten" -->
+        <v-container id="about" align="center">
+          <v-card width="450" align="center" justify="center" variant="elevated">
+            <v-card-item>
+              <v-card-title>About Pocket Planner</v-card-title>
+            </v-card-item>
+
+            <v-card-text class="text-h6"> "Introducing Pocket Planner, your sleek and intuitive digital calendar for
+              effortless
+              scheduling on the go. With features like customizable reminders, color-coded categories, managing your
+              schedule has never been easier. Stay organized, stay on top of your commitments — download Pocket Planner
+              today!" </v-card-text>
+          </v-card>
+        </v-container>
+      </div>
+
     </div>
 
-
-    <!-- div för registreringsknapp -->
-    <div class="text-center">
-      <router-link to="/Signup"><v-btn class="logBtn" elevation="2" large>Register</v-btn></router-link>
-    </div>
-
-    <!-- div för beskrivning av "produkten" -->
-
-    <v-container id="about" align="center">
-      <v-card width="400" align="center" justify="center" variant="elevated">
-        <v-card-item>
-          <v-card-title>About Pocket Planner</v-card-title>
-        </v-card-item>
-
-        <v-card-text> "Introducing Pocket Planner, your sleek and intuitive digital calendar for effortless scheduling on the go. With features like customizable reminders, color-coded categories, managing your schedule has never been easier. Stay organized, stay on top of your commitments — download Pocket Planner today!" </v-card-text>
-      </v-card>
-    </v-container>
-  </div>
-  </div>
-    <!-- <MockupPic /> -->
   </main>
 </template>
 
 <style scoped>
+.content-container {
+  display: flex;
+  flex-wrap: wrap;
+}
 
-#Mockup{
+#Mockup {
+  display: flex;
   background-color: #F7E4D5;
-
-
+  flex: 2;
+  width: 50%;
 }
 
 #Mockup img {
-  margin-right: 60%;
+  width: 100%;
   height: auto;
-  width: 40%;
-  overflow-x: hidden;
-  background-color: #F7E4D5;
+}
+
+.rightFlex {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.custom-button {
+  background-color: #FF851B;
 
 }
 
-  .custom-button {
-    background-color: #FF851B;
-
-  }
-
 .text-center {
   margin: 30px;
-  margin-left: 40%;
-  /* display: block; */
-  /* display: flex;
+  display: flex;
+  flex-direction: column;
   justify-content: center;
-  align-items: center; */
 }
 
 button {
   width: 15vw;
   align-items: center;
+  margin: 10px;
 
 }
 
 #about {
   margin-bottom: 0;
-  margin-left: 29%;
+  padding-top: 0;
+}
+
+@media (max-width: 1300px) {
+  .content-container {
+    flex-direction: column-reverse;
+  }
+
+  #Mockup {
+    width: 100%;
+    float: right;
+  }
+
+  .rightFlex {
+    float: left;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+  }
 
 }
 
@@ -92,20 +120,30 @@ button {
   }
 }
 
-@media (max-width: 550px) {
+@media (max-width: 600px) {
   button {
-    width: 30vw;
+    width: 40vw;
   }
 
   #about {
     display: flex;
-    width: 85vw;
+    width: 80vw;
+    justify-content: center;
   }
 
   .text-center {
-    margin: 30px;
+    margin: 20px;
     padding-top: 2vh;
 
   }
+}
+
+@media (max-width: 450px) {
+  #about {
+    display: flex;
+    width: 95vw;
+    justify-content: center;
+  }
+
 }
 </style>
