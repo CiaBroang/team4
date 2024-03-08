@@ -5,10 +5,10 @@
       <a class="underline-link" @click="$router.push('/login')" style="cursor: pointer;">Already a user? Log in here!</a>
     </span>
     <v-form ref="form">
-      <v-text-field v-model="first" color="primary" label="First name" variant="underlined"
+      <v-text-field v-model="firstname" color="primary" label="First name" variant="underlined"
         :rules="[required]"></v-text-field>
 
-      <v-text-field v-model="last" color="primary" label="Last name" variant="underlined"
+      <v-text-field v-model="lastname" color="primary" label="Last name" variant="underlined"
         :rules="[required]"></v-text-field>
 
       <v-text-field v-model="email" color="primary" label="Email" variant="underlined" :rules="[required]"></v-text-field>
@@ -36,10 +36,12 @@
 </template>
 
 <script>
+import { useUserDataStore } from '@/stores/userDataStore';
+
 export default {
   data: () => ({
-    first: null,
-    last: null,
+    firstname: null,
+    lastname: null,
     email: null,
     password: null,
     terms: false,
@@ -53,11 +55,21 @@ export default {
       const { valid } = await this.$refs.form.validate();
 
       if (valid) {
-        alert('We created your Pocket Planer!');
+
+        const newUser = {
+          firstname: this.firstname,
+          lastname: this.lastname,
+          email: this.email,
+          password: this.password
+        };
+
+        useUserDataStore().addUser(newUser);
+
+        alert(`Welcome ${this.firstname}! We created your Pocket Planer`);
         this.$router.push('/calendar');
       }
+    },
     }
-  }
 };
 </script>
 

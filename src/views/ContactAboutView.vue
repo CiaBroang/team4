@@ -25,7 +25,7 @@
             <v-card class="contact-section" outlined>
               <v-card-title class="headline">Contact Us</v-card-title>
               <v-card-text>
-                <v-form ref="form" @submit.prevent="submitForm">
+                <v-form ref="form" @submit.prevent="submitForm" label="contact form">
                   <v-text-field v-model="name" label="Name" required></v-text-field>
                   <v-text-field v-model="email" label="Email" required></v-text-field>
                   <v-textarea v-model="message" label="Message" required></v-textarea>
