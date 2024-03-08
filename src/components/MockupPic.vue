@@ -2,7 +2,7 @@
 
 <template>
   <div id="Mockup">
-        <img src="../assets/img/iPhone-pink-backgronund.jpg" alt="Iphone mockup"/>
+        <img src="../assets/img/iPhone-pink-backgronund.jpg" alt="Iphone mockup showing the Pocket Planner calendar"/>
   </div>
 </template>
 

@@ -1,10 +1,10 @@
 <template>
     <div id="logo-large" class="img-fluid">
-        <img src="../assets/img/pocket-planner-high-resolution-logo-transparent.png" />
+        <img src="../assets/img/pocket-planner-high-resolution-logo-transparent.png" alt="Pocket Planner Logo"/>
     </div>
     <div id="hero-container">
-        <img src="../assets/img/simon-maage-tXiMrX3Gc-g-unsplash.jpg" class="img-fluid" alt="hero" id="hero-img1" />
-        <img src="../assets/img/hero-cropped.jpg" class="img-fluid" alt="hero" id="hero-img2" />
+        <img src="../assets/img/simon-maage-tXiMrX3Gc-g-unsplash.jpg" class="img-fluid" alt="hero image of happy friends during sunset" id="hero-img1" />
+        <img src="../assets/img/hero-cropped.jpg" class="img-fluid" alt="hero image of happy friends during sunset" id="hero-img2" />
         <div class="top-left">Planning life should be easy...</div>
         <div class="top-left2">So you have time to live your life</div>
     </div>
@@ -18,7 +18,7 @@
     position: relative;
     text-align: center;
     color: black;
-    font-size: x-large;
+    font-size: Xx-large;
 }
 
 #logo-large img {
@@ -33,7 +33,7 @@
     position: relative;
     text-align: center;
     color: black;
-    font-size: x-large;
+    font-size: Xx-large;
 }
 
 #hero-container img {
@@ -73,6 +73,23 @@
     display: none;
 }
 
+
+
+/* ----------- Media Queries --------- */
+
+@media (max-width: 1400px) {
+    #hero-container {
+        font-size: x-large;
+    }
+}
+
+@media (max-width: 950px) {
+    #hero-container {
+        font-size:larger;
+    }
+}
+
+
 @media (max-width: 800px) {
     #hero-img1 {
         display: block;
@@ -86,9 +103,6 @@
 }
 
 @media (max-width: 800px) {
-    #hero-container {
-        font-size: larger;
-    }
 
 .top-left {
         position: absolute;

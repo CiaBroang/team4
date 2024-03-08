@@ -3,7 +3,7 @@
     <v-app-bar app color="white">
       <v-toolbar-title>
         <router-link to="/">
-          <img class="mr-10" src="../assets/img/pocket-planner-favicon-color.png" alt="Logotyp" height="60">
+          <img class="mr-10" src="../assets/img/pocket-planner-favicon-color.png" alt="Logotyp click to go to homepage" height="60">
         </router-link>
       </v-toolbar-title>
       <v-spacer></v-spacer>
