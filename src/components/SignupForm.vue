@@ -64,7 +64,7 @@ export default {
         };
 
         useUserDataStore().addUser(newUser);
-
+        console.log(newUser);
         alert(`Welcome ${this.firstname}! We created your Pocket Planer`);
         this.$router.push('/calendar');
       }

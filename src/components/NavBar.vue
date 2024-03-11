@@ -3,20 +3,33 @@
     <v-app-bar app color="white">
       <v-toolbar-title>
         <router-link to="/">
-          <img class="mr-10" src="../assets/img/pocket-planner-favicon-color.png" alt="Logotyp" height="60">
+          <img
+            class="mr-10"
+            src="../assets/img/pocket-planner-favicon-color.png"
+            alt="Logotyp"
+            height="60"
+          />
         </router-link>
       </v-toolbar-title>
       <v-spacer></v-spacer>
-      <v-chip @click="$router.push('/login')" class="mr-10 chip-custom" size="x-large" color="orange" text>Sign in</v-chip>
+      <v-chip
+        @click="$router.push('/login')"
+        class="mr-10 chip-custom"
+        size="x-large"
+        color="orange"
+        text
+        >Sign in</v-chip
+      >
       <v-menu>
         <template v-slot:activator="{ props }">
-          <v-btn style="color: orange;" icon="$vuetify" v-bind="props">
-          </v-btn>
+          <v-btn style="color: orange" icon="$vuetify" v-bind="props"> </v-btn>
         </template>
 
         <v-list>
           <v-list-item v-for="(item, i) in items" :key="i">
-            <v-list-item-title>{{ item.title }}</v-list-item-title>
+            <router-link :to="item.link">
+              <v-list-item-title>{{ item.title }}</v-list-item-title>
+            </router-link>
           </v-list-item>
         </v-list>
       </v-menu>
@@ -25,20 +38,18 @@
 </template>
 
 <script>
-
 export default {
   data: () => ({
     items: [
-      { title: 'My account' },
-      { title: 'About Pocket planner' },
-      { title: 'For your business' },
-    ],
-  }),
+      { title: 'Settings', link: '/settings' },
+      { title: 'About Pocket planner', link: '/about' },
+      { title: 'For your business', link: '/about' }
+    ]
+  })
 }
 </script>
 
 <style>
-
 .toolbar-link {
   display: flex;
   align-items: center;
@@ -61,3 +72,5 @@ export default {
   background-color: #e0e0e0;
 }
 </style>
+
+@click="$router.push('/settings')"
