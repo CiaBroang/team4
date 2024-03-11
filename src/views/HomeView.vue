@@ -12,7 +12,7 @@ import HeroImage from "../components/HeroImage.vue";
 
       <!-- <MockupPic /> -->
       <div id="Mockup" class="leftFlex">
-        <img src="../assets/img/iPhone-pink-backgronund.jpg" alt="Iphone mockup" />
+        <img src="../assets/img/iPhone-pink-backgronund.jpg" alt="Iphone mockup showing the Pocket Planner calendar" />
       </div>
 
       <div class="rightFlex">
