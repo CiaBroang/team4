@@ -79,10 +79,213 @@ export default {
     events.value = [
       {
         id: 1,
-        name: 'Möte',
-        startDate: '2024-02-21T11:00:00',
-        endDate: '2024-02-21T12:00:00',
+        name: 'Morgonmöte',
+        startDate: '2024-03-01T09:00:00',
+        endDate: '2024-03-01T09:30:00',
         resourceId: 1
+      },
+      {
+        id: 2,
+        name: 'Workshop om Digital Transformation',
+        startDate: '2024-03-03T14:00:00',
+        endDate: '2024-03-03T16:00:00',
+        resourceId: 1
+      },
+      {
+        id: 3,
+        name: 'Kreativ brainstorming session',
+        startDate: '2024-03-05T11:00:00',
+        endDate: '2024-03-05T12:30:00',
+        resourceId: 1
+      },
+      {
+        id: 4,
+        name: 'Kundbesök för affärsförhandlingar',
+        startDate: '2024-03-08T13:00:00',
+        endDate: '2024-03-08T15:00:00',
+        resourceId: 1
+      },
+      {
+        id: 5,
+        name: 'Utvecklingsmöte med teknikteamet',
+        startDate: '2024-03-10T10:30:00',
+        endDate: '2024-03-10T12:00:00',
+        resourceId: 1
+      },
+      {
+        id: 6,
+        name: 'Lunchmöte med ledningen',
+        startDate: '2024-03-12T12:00:00',
+        endDate: '2024-03-12T13:00:00',
+        resourceId: 1
+      },
+      {
+        id: 7,
+        name: 'Daglig stand-up för teamet',
+        startDate: '2024-03-15T09:30:00',
+        endDate: '2024-03-15T09:45:00',
+        resourceId: 1
+      },
+      {
+        id: 8,
+        name: 'Marknadsföringsstrategisession',
+        startDate: '2024-03-17T15:00:00',
+        endDate: '2024-03-17T17:00:00',
+        resourceId: 1
+      },
+      {
+        id: 9,
+        name: 'Projektgenomgång med intressenter',
+        startDate: '2024-03-20T11:00:00',
+        endDate: '2024-03-20T12:30:00',
+        resourceId: 1
+      },
+      {
+        id: 10,
+        name: 'Team Building Aktivitet - Golf',
+        startDate: '2024-03-24T14:00:00',
+        endDate: '2024-03-24T18:00:00',
+        resourceId: 1
+      },
+      {
+        id: 11,
+        name: 'Produktutbildning för försäljningsavdelningen',
+        startDate: '2024-03-26T09:00:00',
+        endDate: '2024-03-26T11:00:00',
+        resourceId: 1
+      },
+      {
+        id: 12,
+        name: 'Team Review Session',
+        startDate: '2024-03-29T16:00:00',
+        endDate: '2024-03-29T17:30:00',
+        resourceId: 1
+      },
+      {
+        id: 13,
+        name: 'IT System Uppdatering',
+        startDate: '2024-03-02T13:00:00',
+        endDate: '2024-03-02T17:00:00',
+        resourceId: 2
+      },
+      {
+        id: 14,
+        name: 'Kundsupportträning',
+        startDate: '2024-03-06T10:00:00',
+        endDate: '2024-03-06T12:00:00',
+        resourceId: 2
+      },
+      {
+        id: 15,
+        name: 'Löneutbetalning',
+        startDate: '2024-03-10T16:00:00',
+        endDate: '2024-03-10T17:00:00',
+        resourceId: 2
+      },
+      {
+        id: 16,
+        name: 'Strategisk planeringssession',
+        startDate: '2024-03-14T14:00:00',
+        endDate: '2024-03-14T16:00:00',
+        resourceId: 2
+      },
+      {
+        id: 17,
+        name: 'Evaluering av försäljningskampanj',
+        startDate: '2024-03-18T11:30:00',
+        endDate: '2024-03-18T12:30:00',
+        resourceId: 2
+      },
+      {
+        id: 18,
+        name: 'Byggningssäkerhetskontroll',
+        startDate: '2024-03-22T09:30:00',
+        endDate: '2024-03-22T11:30:00',
+        resourceId: 2
+      },
+      {
+        id: 19,
+        name: 'Samarbetsövning med andra avdelningar',
+        startDate: '2024-03-25T13:00:00',
+        endDate: '2024-03-25T15:00:00',
+        resourceId: 2
+      },
+      {
+        id: 20,
+        name: 'Budgetplanering för nästa kvartal',
+        startDate: '2024-03-28T10:00:00',
+        endDate: '2024-03-28T12:00:00',
+        resourceId: 2
+      },
+      {
+        id: 21,
+        name: 'Möte',
+        startDate: '2024-03-14T11:10:00',
+        endDate: '2024-03-14T11:25:00',
+        resourceId: 1
+      },
+      {
+        id: 22,
+        name: 'Presentation av Ny Produkt',
+        startDate: '2024-03-15T15:00:00',
+        endDate: '2024-03-15T16:00:00',
+        resourceId: 1
+      },
+      {
+        id: 23,
+        name: 'Kundmöte',
+        startDate: '2024-03-18T10:00:00',
+        endDate: '2024-03-18T11:00:00',
+        resourceId: 1
+      },
+      {
+        id: 24,
+        name: 'Avstämning med HR',
+        startDate: '2024-03-20T13:30:00',
+        endDate: '2024-03-20T14:30:00',
+        resourceId: 1
+      },
+      {
+        id: 25,
+        name: 'Deadline rapport',
+        startDate: '2024-03-25T00:00:00',
+        endDate: '2024-03-25T23:59:59',
+        resourceId: 2
+      },
+      {
+        id: 26,
+        name: 'Årsstämma',
+        startDate: '2024-03-27T09:00:00',
+        endDate: '2024-03-27T18:00:00',
+        resourceId: 2
+      },
+      {
+        id: 27,
+        name: 'Lunchrast',
+        startDate: '2024-03-11T11:45:00',
+        endDate: '2024-03-11T12:45:00',
+        resourceId: 6
+      },
+      {
+        id: 28,
+        name: 'Fikapaus',
+        startDate: '2024-03-13T15:15:00',
+        endDate: '2024-03-13T15:45:00',
+        resourceId: 6
+      },
+      {
+        id: 29,
+        name: 'Team Building Aktivitet',
+        startDate: '2024-03-22T18:00:00',
+        endDate: '2024-03-22T21:00:00',
+        resourceId: 8
+      },
+      {
+        id: 30,
+        name: 'Utbildning',
+        startDate: '2024-03-29T08:00:00',
+        endDate: '2024-03-29T17:00:00',
+        resourceId: 8
       }
     ]
 
